@@ -151,7 +151,8 @@ h4, .h4 {
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
+    color: red;
   }
 }
 
@@ -9353,7 +9354,7 @@ textarea.form-control-lg {
     margin-right: auto !important;
   }
   .mb-md-0 {
-    margin-bottom: 0 !important;
+    margin-bottom: 20px !important;
   }
   .mb-md-1 {
     margin-bottom: 0.25rem !important;

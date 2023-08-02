@@ -17,7 +17,7 @@ class Skill(models.Model):
 class Education(models.Model):
     start_date = models.DateField()
     end_date = models.DateField()
-    university_name = models.TextField(max_length=30)
+    university_name = models.TextField(max_length=100)
     university_city = models.TextField(max_length=20)
     grade = models.TextField(max_length=30)
     discription = models.TextField(max_length=1000, blank = True, null=True)
@@ -36,8 +36,8 @@ class Language(models.Model):
     language = models.TextField(max_length=10)
     created_at = models.DateTimeField(auto_now_add=True)
 
+class Projects(models.Model):
+    project_name = models.TextField(max_length=100)
+    project_description = models.TextField(max_length=1000)
+    project_image = models.ImageField()
 
-
-
-
-# Create your models here

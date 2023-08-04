@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Skill, Education, Experience, Language, PersonalData, Projects
+from .models import PersonalData, Skill, Education, Experience, Language, Projects
 
 class PersonalDataAdmin(admin.ModelAdmin):
-    list_display = ["first_name", "last_name", "address", "profession"]
+    list_display = ["profession"]
 
 class SkillAdmin(admin.ModelAdmin):
     list_display = ["skill"]
@@ -19,12 +19,15 @@ class LanguageAdmin(admin.ModelAdmin):
 class ProjectsAdmin(admin.ModelAdmin):
     list_display = ["project_name", "project_description", "project_image"]
 
-admin.site.register(PersonalData, PersonalDataAdmin)
+class imageAdmin(admin.ModelAdmin):
+    list_display = ["title", "photo"]
+
 admin.site.register(Skill, SkillAdmin)
 admin.site.register(Education, EducationAdmin)
 admin.site.register(Experience, ExperienceAdmin)
 admin.site.register(Language, LanguageAdmin)
 admin.site.register(Projects, ProjectsAdmin)
+admin.site.register(PersonalData, PersonalDataAdmin)
 
 
 

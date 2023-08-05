@@ -47,3 +47,8 @@ class Projects(models.Model):
     project_description = models.TextField(max_length=1000)
     project_image = models.ImageField(upload_to='media')
     
+class Message(models.Model):
+    full_name = models.CharField(max_length=60)
+    email = models.EmailField()
+    phone_number = models.IntegerField()
+    message = models.TextField()

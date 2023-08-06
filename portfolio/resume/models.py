@@ -15,7 +15,6 @@ class PersonalData(models.Model):
     slogan = models.TextField(max_length=100)
     smth_to_say = models.TextField(max_length=200)
 
-
 class Skill(models.Model):
     skill = models.TextField(max_length=30)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -46,6 +45,7 @@ class Projects(models.Model):
     project_name = models.TextField(max_length=100)
     project_description = models.TextField(max_length=1000)
     project_image = models.ImageField(upload_to='media')
+    project_link = models.TextField()
     
 class Message(models.Model):
     full_name = models.CharField(max_length=60)

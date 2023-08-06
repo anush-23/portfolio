@@ -29,9 +29,3 @@ admin.site.register(Language, LanguageAdmin)
 admin.site.register(Projects, ProjectsAdmin)
 admin.site.register(PersonalData, PersonalDataAdmin)
 admin.site.register(Message, MessageAdmin)
-
-
-
-
-
-# Register your models here.

@@ -10,20 +10,21 @@
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-11 col-xl-9 col-xxl-8">
                             <!-- Project Card 1-->
+                            {% for item in projects %}
                             <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <a href={{ item.project_link }} target="blank">
                                 <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        {% for item in projects %}
+                                    <div class="d-flex align-items-center"> 
                                         <div class="p-5">
                                             <h2 class="fw-bolder">{{item.project_name}}</h2>
                                             <p>{{item.project_description}}</p>
                                         </div>
                                         <img class="img-fluid" src="{{ item.project_image.url }}" alt="image" />
-                                        {% endfor %}
                                     </div>
                                 </div>
+                                </a>
                             </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

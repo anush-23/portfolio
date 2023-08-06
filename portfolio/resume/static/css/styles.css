@@ -247,7 +247,7 @@ sup {
 
 a {
   color: var(--bs-link-color);
-  text-decoration: underline;
+  text-decoration:none
 }
 a:hover {
   color: var(--bs-link-hover-color);
@@ -3286,6 +3286,30 @@ textarea.form-control-lg {
   left: auto;
 }
 
+@media (max-width: 360px) {
+  .navbar-brand span {
+    font-size: 0.25rem;
+  }
+  .navbar-toggler {
+    font-size: 0.25rem;
+  }
+  .text-uppercase {
+    font-size: 0.25rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .navbar-brand span {
+    font-size: 1rem;
+  }
+  .navbar-toggler {
+    font-size: 0.75rem;
+  }
+  .text-uppercase {
+    font-size: 0.5rem;
+  }
+}
+
 @media (min-width: 576px) {
   .dropdown-menu-sm-start {
     --bs-position: start;
@@ -3303,6 +3327,9 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 768px) {
+  .bi-download {
+    font-size: 2px, 
+  }
   .dropdown-menu-md-start {
     --bs-position: start;
   }
@@ -4052,7 +4079,7 @@ textarea.form-control-lg {
     overflow-y: visible;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 460px) {
   .navbar-expand-xxl {
     flex-wrap: nowrap;
     justify-content: flex-start;

@@ -21,7 +21,7 @@ class Skill(models.Model):
 
 class Education(models.Model):
     start_date = models.DateField()
-    end_date = models.DateField()
+    end_date = models.DateField(null=True, blank=True)
     university_name = models.TextField(max_length=100)
     university_city = models.TextField(max_length=20)
     grade = models.TextField(max_length=30)
@@ -30,7 +30,7 @@ class Education(models.Model):
 
 class Experience(models.Model):
     start_date = models.DateField()
-    end_date = models.DateField()
+    end_date = models.DateField(null=True, blank=True)
     position = models.TextField(max_length=30)
     company_name = models.TextField(max_length=100)
     company_city = models.TextField(max_length=20)

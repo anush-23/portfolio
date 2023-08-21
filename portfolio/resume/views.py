@@ -25,7 +25,8 @@ def projects(request):
 
 def get_in_touch(request):
     message = MessageForm()
-    data = {"message_form": message}
+    context_data = get_data()
+    data = {**context_data, "message_form": message}
     if request.method == "POST":
         form = MessageForm(request.POST)
         if form.is_valid():

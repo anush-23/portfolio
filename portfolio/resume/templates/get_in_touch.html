@@ -15,7 +15,7 @@
                             </div>
                         </div>
                             {% include "submit_message.html" %}
-                            <div class="col-lg-8 col-xl-6">
+                            <div class="col-lg-8 col-xl-6 form-container">
                                 <form class = "contactform" id="contactForm"  method="POST" action={% url "get_in_touch" %}>
                                     {% csrf_token %}
                                     <!-- Name input-->
